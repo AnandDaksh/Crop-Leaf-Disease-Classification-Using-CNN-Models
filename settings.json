@@ -1,0 +1,10 @@
+{
+    "workbench.colorTheme": "Kamekazi Dark (Italic)",
+    "workbench.iconTheme": "vs-minimal",
+    "zenMode.restore": true,
+    "workbench.preferredDarkColorTheme": "Solarized Dark",
+    "workbench.preferredHighContrastColorTheme": "Monokai",
+    "workbench.preferredHighContrastLightColorTheme": "Monokai",
+    "workbench.preferredLightColorTheme": "Solarized Dark",
+    "workbench.sideBar.location": "left"
+}
