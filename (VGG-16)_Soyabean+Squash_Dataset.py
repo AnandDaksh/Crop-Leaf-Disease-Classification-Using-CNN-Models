@@ -16,7 +16,7 @@ from tensorflow.keras.applications import VGG16
 classes = ["Soybean___healthy", "Squash___Powdery_mildew"]
 
 # Define the path to the folder containing the images
-data_dir = "E:/Nikhil/Daksh/Datasets/Soyabean_Squash_Datasets"
+data_dir = "E:/IITR/Daksh/Datasets/Soyabean_Squash_Datasets"
 
 # Initialize ImageDataGenerator for data augmentation
 datagen = tf.keras.preprocessing.image.ImageDataGenerator(
