@@ -16,7 +16,7 @@ import seaborn as sns
 # Define classes
 classes = ["Potato___Early_blight","Potato___healthy","Potato___Late_blight"]
 # Define main directory
-main_dir = "E:/Nikhil/Daksh/Datasets/Potato_Dataset"
+main_dir = "E:/IITR/Daksh/Datasets/Potato_Dataset"
 
 # Initialize ImageDataGenerator for data augmentation for train data
 train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
