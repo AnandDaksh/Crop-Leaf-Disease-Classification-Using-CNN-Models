@@ -16,7 +16,7 @@ import seaborn as sns
 # Define classes
 classes = ["Pepper_bell_Bacterial_spot","Pepper_bell_healthy"]
 # Define main directory
-main_dir = "E:/Nikhil/Daksh/Datasets/Pepper_Dataset"
+main_dir = "E:/IITR/Daksh/Datasets/Pepper_Dataset"
 
 # Initialize ImageDataGenerator for data augmentation for train data
 train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
