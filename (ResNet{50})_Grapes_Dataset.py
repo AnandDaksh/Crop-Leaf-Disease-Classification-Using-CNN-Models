@@ -18,7 +18,7 @@ from tensorflow.keras.applications.resnet50 import preprocess_input
 # Define classes
 classes = ["Grape___Black_rot", "Grape___Esca_(Black_Measles)", "Grape___healthy", "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)"]
 # Define main directory
-main_dir = "E:/Nikhil/Daksh/Datasets/Grape_Datasets"
+main_dir = "E:/IITR/Daksh/Datasets/Grape_Datasets"
 
 # Initialize ImageDataGenerator for data augmentation for train data
 train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
