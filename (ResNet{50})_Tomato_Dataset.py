@@ -19,7 +19,7 @@ from tensorflow.keras.applications.resnet50 import preprocess_input
 classes = ["Tomato_Bacterial_spot", "Tomato_Early_blight", "Tomato_Late_blight","Tomato_Leaf_Mold","Tomato_Septoria_leaf_spot","Tomato_Spider_mites_Two-spotted_spider_mite","Tomato_Target_Spot","Tomato_Tomato_Yellow_Leaf_Curl_Virus","Tomato_Tomato_mosaic_virus","Tomato_healthy"]
 
 # Define main directory
-main_dir = "E:/Nikhil/Daksh/Datasets/Tomato_Dataset"
+main_dir = "E:/IITR/Daksh/Datasets/Tomato_Dataset"
 
 # Initialize ImageDataGenerator for data augmentation for train data
 train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
