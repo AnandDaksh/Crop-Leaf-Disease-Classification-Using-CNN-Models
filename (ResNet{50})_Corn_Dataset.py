@@ -18,7 +18,7 @@ from tensorflow.keras.applications.resnet50 import preprocess_input
 # Define classes
 classes = ["Corn___Cercospora_leaf_spot Gray_leaf_spot", "Corn___Common_rust", "Corn___healthy", "Corn___Northern_Leaf_Blight"]
 # Define main directory
-main_dir = "E:/Nikhil/Daksh/Datasets/Corn_Datasets"
+main_dir = "E:/IITR/Daksh/Datasets/Corn_Datasets"
 
 # Initialize ImageDataGenerator for data augmentation for train data
 train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
