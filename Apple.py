@@ -10,7 +10,7 @@ from tensorflow.keras.applications import VGG16
 classes = ["Apple___Apple_scab", "Apple___Black_rot", "Apple___Cedar_apple_rust", "Apple___healthy"]
 
 # Define the path to the folder containing the images
-data_dir = "E:/Nikhil/Daksh/Datasets/Apple_Dataset"
+data_dir = "E:/IITR/Daksh/Datasets/Apple_Dataset"
 
 # Initialize ImageDataGenerator for data augmentation
 datagen = tf.keras.preprocessing.image.ImageDataGenerator(
