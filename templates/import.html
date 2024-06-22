@@ -1,0 +1,71 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <h2 class="text-center">Import File</h2>
+            <form id="upload-file" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="modelSelect">Select Model:</label>
+                    <select id="modelSelect" name="model" class="form-control">
+                        <option value="apple">Apple</option>
+                        <option value="corn">Corn</option>
+                        <option value="grapes">Grapes</option>
+                        <option value="blueberry_cherry">Blueberry/Cherry</option>
+                        <option value="peach">Peach</option>
+                        <option value="orange_raspberry">Orange/Raspberry</option>
+                        <option value="pepper">Pepper</option>
+                        <option value="potato">Potato</option>
+                        <option value="soyabean_squash">Soyabean/Squash</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="tomato">Tomato</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="fileUpload">Select File:</label>
+                    <input type="file" name="file" class="form-control-file" id="fileUpload" accept=".png, .jpg, .jpeg">
+                </div>
+                <div class="form-group">
+                    <button type="button" class="btn btn-primary btn-block" id="btn-import">Import</button>
+                </div>
+            </form>
+            <div class="loader text-center" style="display:none;">Processing...</div>
+            <div id="result" class="text-center mt-3"></div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#btn-import').click(function () {
+            let form_data = new FormData($('#upload-file')[0]);
+            let model = $('#modelSelect').val();
+            form_data.append('model', model);
+            $.ajax({
+                type: 'POST',
+                url: '/predict',
+                data: form_data,
+                contentType: false,
+                cache: false,
+                processData: false,
+                async: true,
+                beforeSend: function () {
+                    $('#result').text('');
+                    $('.loader').show();
+                },
+                success: function (data) {
+                    $('.loader').hide();
+                    $('#result').text(data);
+                },
+                error: function () {
+                    $('.loader').hide();
+                    $('#result').text('An error occurred.');
+                }
+            });
+        });
+    });
+</script>
+
+{% endblock %}
