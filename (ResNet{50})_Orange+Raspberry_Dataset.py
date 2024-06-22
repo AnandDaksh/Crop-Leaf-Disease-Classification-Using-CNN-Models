@@ -18,7 +18,7 @@ from tensorflow.keras.applications.resnet50 import preprocess_input
 # Define classes
 classes = ["Orange___Haunglongbing_(Citrus_greening)","Raspberry___healthy"]
 # Define main directory
-main_dir = "E:/Nikhil/Daksh/Datasets/Orange_Raspberry_Datasets"
+main_dir = "E:/IITR/Daksh/Datasets/Orange_Raspberry_Datasets"
 
 # Initialize ImageDataGenerator for data augmentation for train data
 train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
