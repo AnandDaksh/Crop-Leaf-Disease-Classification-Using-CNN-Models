@@ -18,7 +18,7 @@ from tensorflow.keras.applications.resnet50 import preprocess_input
 # Define classes
 classes = ["Peach___Bacterial_spot","Peach___healthy"]
 # Define main directory
-main_dir = "E:/Nikhil/Daksh/Datasets/Peach_Datasets"
+main_dir = "E:/IITR/Daksh/Datasets/Peach_Datasets"
 
 # Initialize ImageDataGenerator for data augmentation for train data
 train_datagen = tf.keras.preprocessing.image.ImageDataGenerator(
